@@ -10,6 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBOutlet weak var wormlabel: UILabel!
+   
+    @IBAction func yes(_ sender: UIButton) {
+        
+        wormlabel.text = "I Got Worms Too!!!"
+    }
+    
+    @IBAction func no(_ sender: UIButton) {
+        
+        wormlabel.text = "Oh No!!! Go get yourself some WORMS!!!"
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
